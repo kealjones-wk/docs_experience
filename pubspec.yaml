@@ -5,5 +5,11 @@ dependencies:
 transformers:
 - over_react
 - $dart2js:
-    minify: true
+    # minify: true
     sourceMaps: true
+
+
+dependency_overrides:
+  shell_events:
+    path: /Users/joelleibow/.publink/shell_events
+
