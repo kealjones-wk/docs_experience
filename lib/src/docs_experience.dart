@@ -11,7 +11,7 @@ class DocsExperience extends HtmlElement {
   void attached() {
     setClientConfiguration();
 
-  ShadowRoot shadow = attachShadow({'mode': 'open'});
+    ShadowRoot shadow = attachShadow({'mode': 'open'});
     react.render(DocsExperienceApp()(), shadow);
   }
 }

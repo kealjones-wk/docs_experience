@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:over_react/over_react.dart';
 import 'package:shell_events/shell_events.dart' show ShellToggleMessagesEvent;
 
