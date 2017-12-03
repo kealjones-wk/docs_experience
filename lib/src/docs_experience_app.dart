@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:over_react/over_react.dart';
 import 'package:shell_events/shell_events.dart' show ShellToggleMessagesEvent;
 
@@ -15,7 +17,7 @@ class DocsExperienceAppState extends UiState {
 
 @Component()
 class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppProps, DocsExperienceAppState>  {
-  ReactElement _toggleMessagesButton;
+  ButtonElement _toggleMessagesButton;
 
   Map getInitialState() => (newState()
     ..counter = 0
@@ -36,7 +38,7 @@ class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppPr
         Dom.p()('Shell Operations'),
         (Dom.button()
           ..onClick = (event) {
-            findDomNode(_toggleMessagesButton).dispatchEvent(new ShellToggleMessagesEvent());
+            _toggleMessagesButton.dispatchEvent(new ShellToggleMessagesEvent());
           }
           ..ref = (ref) {
             _toggleMessagesButton = ref;
