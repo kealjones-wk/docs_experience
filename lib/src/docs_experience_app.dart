@@ -29,10 +29,8 @@ class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppPr
       Dom.p()('Counter: ' + state.counter.toString()),
       Dom.div()(
         Dom.p()('Docs Operations'),
-        (Dom.button()..onClick = (event) => setState(newState()..counter = ++state.counter)
-        )('Increment'),
-        (Dom.button()..onClick = (event) => setState(newState()..counter = --state.counter)
-        )('Decrement')
+        (Dom.button()..onClick = (event) => setState(newState()..counter = ++state.counter))('Increment'),
+        (Dom.button()..onClick = (event) => setState(newState()..counter = --state.counter))('Decrement')
       ),
       Dom.div()(
         Dom.p()('Shell Operations'),
