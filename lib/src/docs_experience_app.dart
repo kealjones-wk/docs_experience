@@ -3,15 +3,17 @@ import 'dart:html';
 import 'package:over_react/over_react.dart';
 import 'package:shell_events/shell_events.dart' show ShellToggleMessagesEvent;
 
+part 'docs_experience_app.over_react.g.dart';
+
 @Factory()
-UiFactory<DocsExperienceAppProps> DocsExperienceApp;
+UiFactory<DocsExperienceAppProps> DocsExperienceApp = _$DocsExperienceApp;
 
 @Props()
-class DocsExperienceAppProps extends UiProps {
+class _$DocsExperienceAppProps extends UiProps {
 }
 
 @State()
-class DocsExperienceAppState extends UiState {
+class _$DocsExperienceAppState extends UiState {
   int counter;
 }
 
@@ -22,7 +24,7 @@ class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppPr
   Map getInitialState() => (newState()
     ..counter = 0
   );
-  
+
   render() {
     return Dom.div()(
       (Dom.h4()..style = { 'margin': 0 })('Docs: using over_react 1.17.0'),
@@ -36,7 +38,7 @@ class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppPr
         Dom.p()('Shell Operations'),
         (Dom.button()
           ..onClick = (event) {
-            _toggleMessagesButton.dispatchEvent(new ShellToggleMessagesEvent());
+            _toggleMessagesButton.dispatchEvent(new ShellToggleMessagesEvent().e);
           }
           ..ref = (ref) {
             _toggleMessagesButton = ref;
