@@ -9,3 +9,11 @@ dev_dependencies:
 dependency_overrides:
   shell_events:
     path: ../shell_events
+  react:
+    git:
+      url: git@github.com:cleandart/react-dart.git
+      ref: 5.0.0-wip
+  over_react:
+    git:
+      url: git@github.com:Workiva/over_react.git
+      ref: 3.0.0-wip
