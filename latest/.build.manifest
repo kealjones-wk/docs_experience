@@ -12,7 +12,6 @@ packages/$sdk/dev_compiler/kernel/common/dart_sdk.js
 packages/$sdk/dev_compiler/kernel/common/run.js
 packages/$sdk/dev_compiler/kernel/es6/dart_sdk.js
 packages/$sdk/dev_compiler/web/dart_stack_trace_mapper.js
-packages/$sdk/dev_compiler/web/ddc_web_compiler.js
 packages/analyzer/src/summary/format.fbs
 packages/build_runner/src/server/README.md
 packages/build_runner/src/server/build_updates_client/hot_reload_client.dart.js
@@ -264,7 +263,6 @@ packages/intl/src/data/dates/symbols/zu.json
 packages/kernel/binary/readme.md
 packages/kernel/target/readme.md
 packages/kernel/text/readme.md
-packages/matcher/.DS_Store
 packages/node_preamble/preamble.js
 packages/node_preamble/preamble.min.js
 packages/over_react/src/builder/README.md

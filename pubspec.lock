@@ -340,12 +340,10 @@ packages:
   over_react:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "3.0.0-wip"
-      resolved-ref: "5a75a3084ee7cbffa3c29f5202f87f726f84e462"
-      url: "git@github.com:Workiva/over_react.git"
-    source: git
-    version: "2.5.2+dart2"
+      name: over_react
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.2+dart2"
   package_config:
     dependency: transitive
     description:
@@ -417,14 +415,12 @@ packages:
     source: hosted
     version: "2.0.5"
   react:
-    dependency: "direct overridden"
+    dependency: "direct main"
     description:
-      path: "."
-      ref: "5.0.0-wip"
-      resolved-ref: "8062e7c0b45706e99ae1fa6b811430861bfd4ab0"
-      url: "git@github.com:cleandart/react-dart.git"
-    source: git
-    version: "5.0.0-dev.0"
+      name: react
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.0"
   sass:
     dependency: transitive
     description:
@@ -606,7 +602,7 @@ packages:
       name: w_flux
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.10.3"
+    version: "2.10.5"
   watcher:
     dependency: transitive
     description:

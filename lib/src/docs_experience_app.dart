@@ -27,7 +27,7 @@ class DocsExperienceAppComponent extends UiStatefulComponent<DocsExperienceAppPr
 
   render() {
     return Dom.div()(
-      (Dom.h4()..style = { 'margin': 0 })('Docs: using over_react 3.0.0-wip'),
+      (Dom.h4()..style = { 'margin': 0 })('Docs: using over_react ">=3.0.0 <=3.1.0"'),
       Dom.p()('Counter: ' + state.counter.toString()),
       Dom.div()(
         Dom.p()('Docs Operations'),
